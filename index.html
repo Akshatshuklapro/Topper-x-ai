@@ -225,6 +225,7 @@ async function ask(){
   if(!q) return;
   addMessage(q, "user");
   document.getElementById("q").value = "";
+  trackQuestion(q);
   await getAnswer(q);
 } 
 
