@@ -263,5 +263,14 @@ function send(text){
 }
 </script> 
 
+<script>
+function trackQuestion(q){
+  if (window.gtag) {
+    gtag('event', 'ask_question', {
+      question_length: q.length
+    });
+  }
+}
+</script>
 </body>
 </html>
